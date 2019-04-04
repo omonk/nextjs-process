@@ -1,4 +1,5 @@
 import NextApp, { Container } from 'next/app';
+import React from 'react';
 
 const {
   REGION,
@@ -7,11 +8,11 @@ const {
   COGNITO_IDENTITY_POOL_ID,
 } = process.env;
 
-console.log({ process });
+// console.log({ process });
 export default class App extends NextApp {
   static async getInitialProps(context) {
-    console.log('------------------------');
-    console.log({ process });
+    // console.log('------------------------');
+    // console.log({ process });
     return {};
   }
 
