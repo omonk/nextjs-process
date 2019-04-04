@@ -8,7 +8,17 @@ const {
   COGNITO_IDENTITY_POOL_ID,
 } = process.env;
 
-// console.log({ process });
+// Want to configure amplify here to  use globally
+// Amplify.configure({
+//   Auth: {
+//     mandatorySignIn: true,
+//     region: REGION,
+//     userPoolId: COGNITO_USER_POOL_ID,
+//     identityPoolId: COGNITO_IDENTITY_POOL_ID,
+//     userPoolWebClientId: COGNITO_APP_CLIENT_ID,
+//   },
+// });
+
 export default class App extends NextApp {
   static async getInitialProps(context) {
     // console.log('------------------------');
